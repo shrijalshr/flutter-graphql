@@ -8,6 +8,8 @@
 [![Watch on GitHub][github-watch-badge]][github-watch]
 [![Star on GitHub][github-star-badge]][github-star]
 
+## NOTICE Project moved over here => https://github.com/snowballdigital/flutter-graphql From now on updates will be made here.
+
 ## Table of Contents
 
 - [Flutter GraphQL](#flutter-graphql)
