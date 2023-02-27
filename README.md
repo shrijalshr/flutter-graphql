@@ -345,7 +345,7 @@ const LIKE_BLOG = '''
 ''';
 ```
 
-The syntax for mutations is fairly similar to that of a query. The only diffence is that the first argument of the builder function is a mutation function. Just call it to trigger the mutations (Yeah we deliberately stole this from react-apollo.)
+The syntax for mutations is fairly similar to that of a query. The only difference is that the first argument of the builder function is a mutation function. Just call it to trigger the mutations (Yeah we deliberately stole this from react-apollo.)
 
 ```dart
 ...
@@ -374,9 +374,9 @@ Mutation(
 ### Subscriptions (Experimental)
 
 The syntax for subscriptions is again similar to a query, however, this utilizes WebSockets and dart Streams to provide real-time updates from a server.
-Before subscriptions can be performed a global intance of `socketClient` needs to be initialized.
+Before subscriptions can be performed a global instance of `socketClient` needs to be initialized.
 
-> We are working on moving this into the same `GraphQLProvider` stucture as the http client. Therefore this api might change in the near future.
+> We are working on moving this into the same `GraphQLProvider` stucture as the http client. Therefore, this api might change in the near future.
 
 ```dart
 socketClient = await SocketClient.connect('ws://coolserver.com/graphql');
@@ -414,7 +414,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ### Graphql Consumer
 
-You can always access the client direcly from the `GraphQLProvider` but to make it even easier you can also use the `GraphQLConsumer` widget. You can also pass in a another client to the consumer
+You can always access the client direcly from the `GraphQLProvider` but to make it even easier you can also use the `GraphQLConsumer` widget. You can also pass in an another client to the consumer
 
 ```dart
   ...
@@ -516,7 +516,7 @@ or
 
 ### Outside a Widget
 
-Similar to withApollo or graphql HoC that passes the client to the component in react, you can call a graphql query from any part of your code base even in a your service class or in your Scoped MOdel or Bloc class. Example
+Similar to withApollo or graphql HoC that passes the client to the component in react, you can call a graphql query from any part of your code base even in a your service class or in your Scoped Model or Bloc class. Example
 
 ```dart
   ...
